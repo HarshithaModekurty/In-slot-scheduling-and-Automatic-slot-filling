@@ -1,0 +1,461 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Nov 20 21:42:22 2025
+# Process ID: 11344
+# Current directory: D:/Delay_branch_project_new/synthesis/synthesis.runs/synth_1
+# Command line: vivado.exe -log core_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source core_top.tcl
+# Log file: D:/Delay_branch_project_new/synthesis/synthesis.runs/synth_1/core_top.vds
+# Journal file: D:/Delay_branch_project_new/synthesis/synthesis.runs/synth_1\vivado.jou
+# Running On: DESKTOP-J3M0MBG, OS: Windows, CPU Frequency: 1190 MHz, CPU Physical cores: 4, Host memory: 8345 MB
+#-----------------------------------------------------------
+source core_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 473.477 ; gain = 177.887
+Command: read_checkpoint -auto_incremental -incremental D:/Delay_branch_project_new/synthesis/synthesis.srcs/utils_1/imports/synth_1/core_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Delay_branch_project_new/synthesis/synthesis.srcs/utils_1/imports/synth_1/core_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top core_top -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12528
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 926.398 ; gain = 441.234
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6901] identifier 'hazard_stall_id' is used before its declaration [D:/Delay_branch_project_new/rtl/cpu_pipeline.v:187]
+WARNING: [Synth 8-6901] identifier 'hazard_flush_id_ex' is used before its declaration [D:/Delay_branch_project_new/rtl/cpu_pipeline.v:187]
+WARNING: [Synth 8-6901] identifier 'slot_inject_active' is used before its declaration [D:/Delay_branch_project_new/rtl/cpu_pipeline.v:245]
+WARNING: [Synth 8-6901] identifier 'mem_wb_reg_write' is used before its declaration [D:/Delay_branch_project_new/rtl/cpu_pipeline.v:362]
+WARNING: [Synth 8-6901] identifier 'mem_wb_dest_reg' is used before its declaration [D:/Delay_branch_project_new/rtl/cpu_pipeline.v:363]
+WARNING: [Synth 8-6901] identifier 'mem_wb_dest_reg' is used before its declaration [D:/Delay_branch_project_new/rtl/cpu_pipeline.v:364]
+WARNING: [Synth 8-6901] identifier 'mem_wb_reg_write' is used before its declaration [D:/Delay_branch_project_new/rtl/cpu_pipeline.v:368]
+WARNING: [Synth 8-6901] identifier 'mem_wb_dest_reg' is used before its declaration [D:/Delay_branch_project_new/rtl/cpu_pipeline.v:369]
+WARNING: [Synth 8-6901] identifier 'mem_wb_dest_reg' is used before its declaration [D:/Delay_branch_project_new/rtl/cpu_pipeline.v:370]
+INFO: [Synth 8-6157] synthesizing module 'core_top' [D:/Delay_branch_project_new/rtl/core_top.v:4]
+INFO: [Synth 8-6157] synthesizing module 'instruction_memory' [D:/Delay_branch_project_new/rtl/instruction_memory.v:4]
+	Parameter DEPTH bound to: 256 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'instruction_memory' (0#1) [D:/Delay_branch_project_new/rtl/instruction_memory.v:4]
+INFO: [Synth 8-6157] synthesizing module 'data_memory' [D:/Delay_branch_project_new/rtl/data_memory.v:4]
+	Parameter DEPTH bound to: 256 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'data_memory' (0#1) [D:/Delay_branch_project_new/rtl/data_memory.v:4]
+INFO: [Synth 8-6157] synthesizing module 'cpu_pipeline' [D:/Delay_branch_project_new/rtl/cpu_pipeline.v:6]
+INFO: [Synth 8-6157] synthesizing module 'if_stage' [D:/Delay_branch_project_new/rtl/if_stage.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'if_stage' (0#1) [D:/Delay_branch_project_new/rtl/if_stage.v:9]
+INFO: [Synth 8-6157] synthesizing module 'id_stage' [D:/Delay_branch_project_new/rtl/id_stage.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'id_stage' (0#1) [D:/Delay_branch_project_new/rtl/id_stage.v:6]
+INFO: [Synth 8-6157] synthesizing module 'reg_file' [D:/Delay_branch_project_new/rtl/reg_file.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'reg_file' (0#1) [D:/Delay_branch_project_new/rtl/reg_file.v:4]
+INFO: [Synth 8-6157] synthesizing module 'delay_slot_scheduler' [D:/Delay_branch_project_new/rtl/delay_slot_scheduler.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'delay_slot_scheduler' (0#1) [D:/Delay_branch_project_new/rtl/delay_slot_scheduler.v:6]
+INFO: [Synth 8-6157] synthesizing module 'hazard_unit' [D:/Delay_branch_project_new/rtl/hazard_unit.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'hazard_unit' (0#1) [D:/Delay_branch_project_new/rtl/hazard_unit.v:4]
+INFO: [Synth 8-6157] synthesizing module 'ex_stage' [D:/Delay_branch_project_new/rtl/ex_stage.v:4]
+INFO: [Synth 8-6157] synthesizing module 'alu' [D:/Delay_branch_project_new/rtl/alu.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [D:/Delay_branch_project_new/rtl/alu.v:4]
+INFO: [Synth 8-6157] synthesizing module 'branch_unit' [D:/Delay_branch_project_new/rtl/branch_unit.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'branch_unit' (0#1) [D:/Delay_branch_project_new/rtl/branch_unit.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'ex_stage' (0#1) [D:/Delay_branch_project_new/rtl/ex_stage.v:4]
+INFO: [Synth 8-6157] synthesizing module 'mem_stage' [D:/Delay_branch_project_new/rtl/mem_stage.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'mem_stage' (0#1) [D:/Delay_branch_project_new/rtl/mem_stage.v:4]
+INFO: [Synth 8-6157] synthesizing module 'wb_stage' [D:/Delay_branch_project_new/rtl/wb_stage.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'wb_stage' (0#1) [D:/Delay_branch_project_new/rtl/wb_stage.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_pipeline' (0#1) [D:/Delay_branch_project_new/rtl/cpu_pipeline.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'core_top' (0#1) [D:/Delay_branch_project_new/rtl/core_top.v:4]
+WARNING: [Synth 8-3848] Net mem[0] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[1] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[2] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[3] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[4] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[5] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[6] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[7] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[8] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[9] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[10] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[11] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[12] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[13] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[14] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[15] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[16] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[17] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[18] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[19] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[20] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[21] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[22] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[23] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[24] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[25] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[26] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[27] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[28] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[29] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[30] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[31] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[32] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[33] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[34] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[35] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[36] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[37] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[38] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[39] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[40] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[41] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[42] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[43] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[44] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[45] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[46] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[47] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[48] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[49] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[50] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[51] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[52] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[53] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[54] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[55] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[56] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[57] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[58] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[59] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[60] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[61] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[62] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[63] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[64] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[65] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[66] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[67] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[68] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[69] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[70] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[71] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[72] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[73] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[74] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[75] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[76] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[77] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[78] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[79] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[80] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[81] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[82] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[83] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[84] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[85] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[86] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[87] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[88] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[89] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[90] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[91] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[92] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[93] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[94] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[95] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[96] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[97] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[98] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+WARNING: [Synth 8-3848] Net mem[99] in module/entity instruction_memory does not have driver. [D:/Delay_branch_project_new/rtl/instruction_memory.v:10]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element id_ex_slot_manual_instr_reg was removed.  [D:/Delay_branch_project_new/rtl/cpu_pipeline.v:271]
+WARNING: [Synth 8-6014] Unused sequential element id_ex_slot_manual_pc_reg was removed.  [D:/Delay_branch_project_new/rtl/cpu_pipeline.v:272]
+WARNING: [Synth 8-6014] Unused sequential element slot_manual_instr_ex_reg was removed.  [D:/Delay_branch_project_new/rtl/cpu_pipeline.v:435]
+WARNING: [Synth 8-6014] Unused sequential element slot_manual_pc_ex_reg was removed.  [D:/Delay_branch_project_new/rtl/cpu_pipeline.v:436]
+WARNING: [Synth 8-7129] Port mem_read in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rs_addr[4] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rs_addr[3] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rs_addr[2] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rs_addr[1] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rs_addr[0] in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[31] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[30] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[29] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[28] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[27] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[26] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[25] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[24] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[23] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[22] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[21] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[20] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[19] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[18] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[17] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[16] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[15] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[14] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[13] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[12] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[11] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[10] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[9] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[8] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[7] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[6] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[5] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[4] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[3] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[2] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[1] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cand0_pc[0] in module delay_slot_scheduler is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[31] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[30] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[29] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[28] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[27] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[26] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[25] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[24] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[23] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[22] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[21] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[20] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[19] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[18] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[17] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[16] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[15] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[14] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[13] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[12] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[11] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[10] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[9] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[8] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[7] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[6] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[5] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[4] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[3] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[2] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[1] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_pc_plus4[0] in module id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[1] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[0] in module data_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[31] in module instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[30] in module instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[29] in module instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[28] in module instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[27] in module instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[26] in module instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[25] in module instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[24] in module instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[23] in module instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[22] in module instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[21] in module instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[20] in module instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[19] in module instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[18] in module instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[17] in module instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[16] in module instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[15] in module instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[14] in module instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[13] in module instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[12] in module instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[11] in module instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[10] in module instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[1] in module instruction_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[0] in module instruction_memory is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1066.027 ; gain = 580.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1066.027 ; gain = 580.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1066.027 ; gain = 580.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1178.363 ; gain = 693.199
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   33 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 6     
+	   3 Input   32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 311   
+	               26 Bit    Registers := 1     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 37    
+	  33 Input   32 Bit        Muxes := 2     
+	   6 Input   32 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   26 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 8     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   5 Input    2 Bit        Muxes := 1     
+	   8 Input    2 Bit        Muxes := 1     
+	   7 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 315   
+	   8 Input    1 Bit        Muxes := 5     
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port clk in module ex_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module ex_stage is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1275.395 ; gain = 790.230
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1279.184 ; gain = 794.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1279.371 ; gain = 794.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1279.371 ; gain = 794.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1279.371 ; gain = 794.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1279.371 ; gain = 794.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1279.371 ; gain = 794.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1279.371 ; gain = 794.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1279.371 ; gain = 794.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    16|
+|3     |LUT1   |     2|
+|4     |LUT2   |     1|
+|5     |FDRE   |   153|
+|6     |IBUF   |     2|
+|7     |OBUF   |   196|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------+-------------+------+
+|      |Instance       |Module       |Cells |
++------+---------------+-------------+------+
+|1     |top            |             |   371|
+|2     |  u_cpu        |cpu_pipeline |   172|
+|3     |    u_if_stage |if_stage     |   101|
++------+---------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1279.371 ; gain = 794.207
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 465 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1279.371 ; gain = 794.207
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1279.371 ; gain = 794.207
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1291.227 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1368.410 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: e08bcd89
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 214 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1368.410 ; gain = 889.957
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1368.410 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Delay_branch_project_new/synthesis/synthesis.runs/synth_1/core_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file core_top_utilization_synth.rpt -pb core_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 20 21:43:09 2025...

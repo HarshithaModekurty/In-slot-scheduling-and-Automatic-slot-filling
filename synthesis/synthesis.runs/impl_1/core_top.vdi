@@ -1,0 +1,462 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Nov 20 21:44:30 2025
+# Process ID: 18336
+# Current directory: D:/Delay_branch_project_new/synthesis/synthesis.runs/impl_1
+# Command line: vivado.exe -log core_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source core_top.tcl -notrace
+# Log file: D:/Delay_branch_project_new/synthesis/synthesis.runs/impl_1/core_top.vdi
+# Journal file: D:/Delay_branch_project_new/synthesis/synthesis.runs/impl_1\vivado.jou
+# Running On: DESKTOP-J3M0MBG, OS: Windows, CPU Frequency: 1190 MHz, CPU Physical cores: 4, Host memory: 8345 MB
+#-----------------------------------------------------------
+source core_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 473.418 ; gain = 179.504
+Command: link_design -top core_top -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 900.594 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 994.562 ; gain = 0.141
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 995.035 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1023.871 ; gain = 550.453
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1048.906 ; gain = 25.035
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1859f1b4b
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1599.293 ; gain = 550.387
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1859f1b4b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.146 . Memory (MB): peak = 1965.617 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1859f1b4b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.291 . Memory (MB): peak = 1965.617 ; gain = 0.000
+Phase 1 Initialization | Checksum: 1859f1b4b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.291 . Memory (MB): peak = 1965.617 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 1859f1b4b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.562 . Memory (MB): peak = 1965.617 ; gain = 0.000
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 1859f1b4b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.727 . Memory (MB): peak = 1965.617 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1859f1b4b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.728 . Memory (MB): peak = 1965.617 ; gain = 0.000
+
+Phase 3 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 1859f1b4b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.948 . Memory (MB): peak = 1965.617 ; gain = 0.000
+Retarget | Checksum: 1859f1b4b
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: ca46c818
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 1965.617 ; gain = 0.000
+Constant propagation | Checksum: ca46c818
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: ff462b27
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 1965.617 ; gain = 0.000
+Sweep | Checksum: ff462b27
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: ff462b27
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 1965.617 ; gain = 0.000
+BUFG optimization | Checksum: ff462b27
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: ff462b27
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 1965.617 ; gain = 0.000
+Shift Register Optimization | Checksum: ff462b27
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: ff462b27
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 1965.617 ; gain = 0.000
+Post Processing Netlist | Checksum: ff462b27
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 132b7625d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 1965.617 ; gain = 0.000
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1965.617 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 132b7625d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 1965.617 ; gain = 0.000
+Phase 9 Finalization | Checksum: 132b7625d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 1965.617 ; gain = 0.000
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 132b7625d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 1965.617 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1965.617 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 132b7625d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.148 . Memory (MB): peak = 1965.617 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 132b7625d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1965.617 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1965.617 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 132b7625d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1965.617 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+24 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1965.617 ; gain = 941.746
+INFO: [runtcl-4] Executing : report_drc -file core_top_drc_opted.rpt -pb core_top_drc_opted.pb -rpx core_top_drc_opted.rpx
+Command: report_drc -file core_top_drc_opted.rpt -pb core_top_drc_opted.pb -rpx core_top_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/Delay_branch_project_new/synthesis/synthesis.runs/impl_1/core_top_drc_opted.rpt.
+report_drc completed successfully
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1965.617 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Delay_branch_project_new/synthesis/synthesis.runs/impl_1/core_top_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1965.617 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 78607dfb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.258 . Memory (MB): peak = 1965.617 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1965.617 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced IO Ports (197) is greater than number of available pins (125).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 125 sites available on device, but needs 196 sites.
+	Term: branch_event_pc[0]
+	Term: branch_event_pc[1]
+	Term: branch_event_pc[2]
+	Term: branch_event_pc[3]
+	Term: branch_event_pc[4]
+	Term: branch_event_pc[5]
+	Term: branch_event_pc[6]
+	Term: branch_event_pc[7]
+	Term: branch_event_pc[8]
+	Term: branch_event_pc[9]
+	Term: branch_event_pc[10]
+	Term: branch_event_pc[11]
+	Term: branch_event_pc[12]
+	Term: branch_event_pc[13]
+	Term: branch_event_pc[14]
+	Term: branch_event_pc[15]
+	Term: branch_event_pc[16]
+	Term: branch_event_pc[17]
+	Term: branch_event_pc[18]
+	Term: branch_event_pc[19]
+	Term: branch_event_pc[20]
+	Term: branch_event_pc[21]
+	Term: branch_event_pc[22]
+	Term: branch_event_pc[23]
+	Term: branch_event_pc[24]
+	Term: branch_event_pc[25]
+	Term: branch_event_pc[26]
+	Term: branch_event_pc[27]
+	Term: branch_event_pc[28]
+	Term: branch_event_pc[29]
+	Term: branch_event_pc[30]
+	Term: branch_event_pc[31]
+	Term: stat_branch_count[0]
+	Term: stat_branch_count[1]
+	Term: stat_branch_count[2]
+	Term: stat_branch_count[3]
+	Term: stat_branch_count[4]
+	Term: stat_branch_count[5]
+	Term: stat_branch_count[6]
+	Term: stat_branch_count[7]
+	Term: stat_branch_count[8]
+	Term: stat_branch_count[9]
+	Term: stat_branch_count[10]
+	Term: stat_branch_count[11]
+	Term: stat_branch_count[12]
+	Term: stat_branch_count[13]
+	Term: stat_branch_count[14]
+	Term: stat_branch_count[15]
+	Term: stat_branch_count[16]
+	Term: stat_branch_count[17]
+	Term: stat_branch_count[18]
+	Term: stat_branch_count[19]
+	Term: stat_branch_count[20]
+	Term: stat_branch_count[21]
+	Term: stat_branch_count[22]
+	Term: stat_branch_count[23]
+	Term: stat_branch_count[24]
+	Term: stat_branch_count[25]
+	Term: stat_branch_count[26]
+	Term: stat_branch_count[27]
+	Term: stat_branch_count[28]
+	Term: stat_branch_count[29]
+	Term: stat_branch_count[30]
+	Term: stat_branch_count[31]
+	Term: stat_cycle_count[0]
+	Term: stat_cycle_count[1]
+	Term: stat_cycle_count[2]
+	Term: stat_cycle_count[3]
+	Term: stat_cycle_count[4]
+	Term: stat_cycle_count[5]
+	Term: stat_cycle_count[6]
+	Term: stat_cycle_count[7]
+	Term: stat_cycle_count[8]
+	Term: stat_cycle_count[9]
+	Term: stat_cycle_count[10]
+	Term: stat_cycle_count[11]
+	Term: stat_cycle_count[12]
+	Term: stat_cycle_count[13]
+	Term: stat_cycle_count[14]
+	Term: stat_cycle_count[15]
+	Term: stat_cycle_count[16]
+	Term: stat_cycle_count[17]
+	Term: stat_cycle_count[18]
+	Term: stat_cycle_count[19]
+	Term: stat_cycle_count[20]
+	Term: stat_cycle_count[21]
+	Term: stat_cycle_count[22]
+	Term: stat_cycle_count[23]
+	Term: stat_cycle_count[24]
+	Term: stat_cycle_count[25]
+	Term: stat_cycle_count[26]
+	Term: stat_cycle_count[27]
+	Term: stat_cycle_count[28]
+	Term: stat_cycle_count[29]
+	Term: stat_cycle_count[30]
+	Term: stat_cycle_count[31]
+	Term: stat_slot_auto_count[0]
+	Term: stat_slot_auto_count[1]
+	Term: stat_slot_auto_count[2]
+	Term: stat_slot_auto_count[3]
+	Term: stat_slot_auto_count[4]
+	Term: stat_slot_auto_count[5]
+	Term: stat_slot_auto_count[6]
+	Term: stat_slot_auto_count[7]
+	Term: stat_slot_auto_count[8]
+	Term: stat_slot_auto_count[9]
+	Term: stat_slot_auto_count[10]
+	Term: stat_slot_auto_count[11]
+	Term: stat_slot_auto_count[12]
+	Term: stat_slot_auto_count[13]
+	Term: stat_slot_auto_count[14]
+	Term: stat_slot_auto_count[15]
+	Term: stat_slot_auto_count[16]
+	Term: stat_slot_auto_count[17]
+	Term: stat_slot_auto_count[18]
+	Term: stat_slot_auto_count[19]
+	Term: stat_slot_auto_count[20]
+	Term: stat_slot_auto_count[21]
+	Term: stat_slot_auto_count[22]
+	Term: stat_slot_auto_count[23]
+	Term: stat_slot_auto_count[24]
+	Term: stat_slot_auto_count[25]
+	Term: stat_slot_auto_count[26]
+	Term: stat_slot_auto_count[27]
+	Term: stat_slot_auto_count[28]
+	Term: stat_slot_auto_count[29]
+	Term: stat_slot_auto_count[30]
+	Term: stat_slot_auto_count[31]
+	Term: stat_slot_manual_count[0]
+	Term: stat_slot_manual_count[1]
+	Term: stat_slot_manual_count[2]
+	Term: stat_slot_manual_count[3]
+	Term: stat_slot_manual_count[4]
+	Term: stat_slot_manual_count[5]
+	Term: stat_slot_manual_count[6]
+	Term: stat_slot_manual_count[7]
+	Term: stat_slot_manual_count[8]
+	Term: stat_slot_manual_count[9]
+	Term: stat_slot_manual_count[10]
+	Term: stat_slot_manual_count[11]
+	Term: stat_slot_manual_count[12]
+	Term: stat_slot_manual_count[13]
+	Term: stat_slot_manual_count[14]
+	Term: stat_slot_manual_count[15]
+	Term: stat_slot_manual_count[16]
+	Term: stat_slot_manual_count[17]
+	Term: stat_slot_manual_count[18]
+	Term: stat_slot_manual_count[19]
+	Term: stat_slot_manual_count[20]
+	Term: stat_slot_manual_count[21]
+	Term: stat_slot_manual_count[22]
+	Term: stat_slot_manual_count[23]
+	Term: stat_slot_manual_count[24]
+	Term: stat_slot_manual_count[25]
+	Term: stat_slot_manual_count[26]
+	Term: stat_slot_manual_count[27]
+	Term: stat_slot_manual_count[28]
+	Term: stat_slot_manual_count[29]
+	Term: stat_slot_manual_count[30]
+	Term: stat_slot_manual_count[31]
+	Term: stat_slot_nop_count[0]
+	Term: stat_slot_nop_count[1]
+	Term: stat_slot_nop_count[2]
+	Term: stat_slot_nop_count[3]
+	Term: stat_slot_nop_count[4]
+	Term: stat_slot_nop_count[5]
+	Term: stat_slot_nop_count[6]
+	Term: stat_slot_nop_count[7]
+	Term: stat_slot_nop_count[8]
+	Term: stat_slot_nop_count[9]
+	Term: stat_slot_nop_count[10]
+	Term: stat_slot_nop_count[11]
+	Term: stat_slot_nop_count[12]
+	Term: stat_slot_nop_count[13]
+	Term: stat_slot_nop_count[14]
+	Term: stat_slot_nop_count[15]
+	Term: stat_slot_nop_count[16]
+	Term: stat_slot_nop_count[17]
+	Term: stat_slot_nop_count[18]
+	Term: stat_slot_nop_count[19]
+	Term: stat_slot_nop_count[20]
+	Term: stat_slot_nop_count[21]
+	Term: stat_slot_nop_count[22]
+	Term: stat_slot_nop_count[23]
+	Term: stat_slot_nop_count[24]
+	Term: stat_slot_nop_count[25]
+	Term: stat_slot_nop_count[26]
+	Term: stat_slot_nop_count[27]
+	Term: stat_slot_nop_count[28]
+	Term: stat_slot_nop_count[29]
+	Term: stat_slot_nop_count[30]
+	Term: stat_slot_nop_count[31]
+	Term: branch_event_taken
+	Term: branch_event_valid
+	Term: slot_event_is_auto
+	Term: slot_event_is_nop
+
+
+Resolution: Consider using Xilinx part with greater number of IO pins
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 13 |    25 |     0 |                                                                        |                                          |        |        |        |     |
+| 34 |    50 |     0 |                                                                        |                                          |        |        |        |     |
+| 35 |    50 |     0 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |   125 |     0 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 78607dfb
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1965.617 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 78607dfb
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1965.617 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 78607dfb
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1965.617 ; gain = 0.000
+41 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 20 21:45:09 2025...

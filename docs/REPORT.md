@@ -343,13 +343,7 @@ Notes:
 
 ---
 
-## 11. How to Explain the Project in 5 Minutes
 
-> “This is a MIPS-style 5-stage pipeline with architectural delay slots. In the IF stage I added a two-entry buffer so the decode stage can see the next two instructions. When ID decodes a branch, the `delay_slot_scheduler` evaluates the next instructions: it rejects control or memory ops and anything writing the branch’s source registers. If the immediate next instruction is safe, it becomes the manual delay slot. Otherwise, if the second instruction is safe, the hardware promotes it into the slot by injecting it right after the branch and removing it from its original place—like a compiler doing instruction scheduling at runtime. If nothing is safe, it inserts a nop.
->
-> “Forwarding logic and a load-use hazard detector ensure instructions see the correct operands, and we never move memory operations, so ordering is preserved. Testbenches show the scheduler filling slots automatically: one case promotes an ALU instruction, one forces a nop because both candidates touch memory, and a manual delay slot still executes even under hazards. Counters record how many slots were manual/auto/nop, so the behavior is transparent. Overall we reduce the branch penalty without relying on software scheduling, all within a standard Verilog pipeline.”
-
----
 
 ## Appendix – Development Status Snapshots
 
